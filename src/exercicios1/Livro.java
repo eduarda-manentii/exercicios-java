@@ -61,4 +61,8 @@ public class Livro {
 		}
 	}
 
+	public boolean getDisponivel() {
+		return false;
+	}
+
 }

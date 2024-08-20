@@ -6,7 +6,6 @@ public class Produto {
 	private Integer quantidadeEstoque;
 	
 	public Produto(String nome, Double preco, Integer quantidadeEstoque) {
-		super();
 		this.nome = nome;
 		this.preco = preco;
 		this.quantidadeEstoque = quantidadeEstoque;
