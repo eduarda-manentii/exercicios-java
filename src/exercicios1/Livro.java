@@ -37,19 +37,19 @@ public class Livro {
 		this.quantidadePaginas = quantidadePaginas;
 	}
 	
+	public boolean getDisponivel() {
+		return disponivel;
+	}
+	
 	public void emprestar() {
 		if(disponivel) {
 			disponivel = false;
-		} else {
-			System.err.println("O livro já foi emprestado.");
 		}
 	}
 	
 	public void devolver() {
 		if(!disponivel) {
 			disponivel = true;
-		} else {
-			System.err.println("O livro já foi devolvido.");
 		}
 	}
 	
@@ -59,10 +59,6 @@ public class Livro {
 		} else {
 			System.err.println("O livro não está disponível.");
 		}
-	}
-
-	public boolean getDisponivel() {
-		return false;
 	}
 
 }

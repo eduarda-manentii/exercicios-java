@@ -4,12 +4,13 @@ import exercicios1.ContaBancaria;
 
 public class Banco {
 	private String nome;
-	private Integer cnpj;
+	private String cnpj;
 	private Integer numeroDeContas;
 
-	public Banco(String nome, Integer cnpj) {
+	public Banco(String nome, String cnpj) {
 		this.nome = nome;
 		this.cnpj = cnpj;
+		this.numeroDeContas = 0;
 	}
 
 	public Pessoa cadastrarCliente(String nome, Integer idade, String profissao) {
@@ -43,11 +44,11 @@ public class Banco {
 		this.nome = nome;
 	}
 
-	public Integer getCnpj() {
+	public String getCnpj() {
 		return cnpj;
 	}
 
-	public void setCnpj(Integer cnpj) {
+	public void setCnpj(String cnpj) {
 		this.cnpj = cnpj;
 	}
 

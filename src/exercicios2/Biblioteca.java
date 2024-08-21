@@ -19,7 +19,6 @@ public class Biblioteca {
 				return;
 			}
 		}
-
 		Livro novoLivro = new Livro(titulo, autor, quantidadePaginas);
 		acervo.add(novoLivro);
 		System.out.println("Livro cadastrado com sucesso.");

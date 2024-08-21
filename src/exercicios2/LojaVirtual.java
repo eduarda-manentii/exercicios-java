@@ -9,11 +9,11 @@ public class LojaVirtual {
 	}
 
 	public CarrinhoDeCompra gerarCarrinhoDeCompra(Produto produto, Pessoa cliente, Integer quantidadeItens) {
-		if(produto.getQuantidadeEstoque() <= quantidadeItens) {
+		if(produto.getQuantidadeEstoque() >= quantidadeItens) {
 			produto.setQuantidadeEstoque(produto.getQuantidadeEstoque() - quantidadeItens);
 			return new CarrinhoDeCompra(produto, cliente, quantidadeItens);
 		} else {
-			System.out.println("Quantidade suficiente do item em estoque.");
+			System.out.println("Quantidade insuficiente do item em estoque.");
 			return null;
 		}
 	}

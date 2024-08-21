@@ -16,7 +16,7 @@ public class MaquinaDeVendas {
 
 	public void cadastrarProduto(String nome, double preco, int quantidade) {
 		Produto produto = new Produto(nome, preco, quantidade);
-		// estoque.put(nome, produto);
+		estoque.add(produto);
 	}
 
 	public void selecionarProduto(String nome) {
