@@ -15,13 +15,11 @@ public class Pessoa {
 		int anosBissextos = 0;
 		int anoAtual = 2024;
 		int anoNascimento = anoAtual - idade;
-
 		for (int ano = anoNascimento; ano <= anoAtual; ano++) {
 			if (isAnoBissexto(ano)) {
 				anosBissextos++;
 			}
 		}
-
 		return anosBissextos;
 	}
 
